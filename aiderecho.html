@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>JCES - UniSabana</title>
+    <link rel="stylesheet" href="../jcunisabana.github.io/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css">
+    <!--    <link rel="stylesheet" href="css/theme/black.css">-->
+
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-74338484-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+
+
+
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-5">
+                            <h1></h1>
+                            <h3 style="text-align:left; background-color:white; color:#022461">El avance del deep learning y sus retos actuales </h3>
+                            <div style="text-align:left; background-color:white; color:#022461;">
+
+                                <a style="color:#022461; text-decoration: underline;" href="../jcunisabana.github.io/">Juan Camilo Espejo-Serna</a>
+
+                                <font size="4">
+                                    <p>Facultad de Filosofía y Ciencias Humanas</p>
+                                    <p style="text-align:left; background-color:white; color:#022461; font-family:'Lucida Console', monospace">juan.espejo1@unisabana.edu.co</p>
+                                </font>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section data-background-image="img/ai.jpg" data-background-size="auto">
+
+                <div class=" " data-fragment-index="1">
+                    <p class="fragment highlightred" data-fragment-index="1">Si uno busca artículos de divulgación sobre IA, se tiende a encontrar imágenes como esta: robots manipulando símbolos matemáticos.
+                    </p>
+                    <p class="fragment highlightred" data-fragment-index="2">La forma en que me interesa hablar de IA el día de hoy no tiene esa forma humanoide pero está mucho más cerca de nuestras vidas.</p>
+
+                </div>
+
+                <font size="1">
+                    <p class=" doscuadros fragment highlightred" data-fragment-index="2" style=" bottom: 0;">(Imagen de www.vpnsrus.com compartida bajo CC BY 2.0) </p>
+                </font>
+
+
+            </section>
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class=" col-sm-5">
+
+                            <h3 style="text-align:left; background-color:white; color:#022461">Plan</h3>
+                            <ol>
+                                <li class="fragment" style="text-align:left; background-color:white; color:#022461">
+                                    ¿Qué es la IA?</li>
+
+                                <li class="fragment" style="text-align:left; background-color:white; color:#022461">La IA que buscábamos
+                                </li>
+                                <li class="fragment" style="text-align:left; background-color:white; color:#022461">La IA que tenemos y sus retos
+                                </li>
+
+                                <li class="fragment" style="text-align:left; background-color:white; color:#022461">Una forma de avanzar
+                                </li>
+
+                            </ol>
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-5">
+                            <h3 style="text-align:left; background-color:white; color:#022461"> ¿Qué es la IA?</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>La expresión "inteligencia artificial" suele traer a la mente imágenes de ciencia ficción.</section>
+
+            <section data-background-image="img/terminator.jpg" data-background-size="contain" data-background-position="right"></section>
+            <section data-background-image="img/spielberg.jpg" data-background-size="contain" data-background-position="right">
+                <p class="doscuadros"></p>
+            </section>
+            <section data-background-image="img/hal9000.png" data-background-size="contain" data-background-position="right">
+                <p class="doscuadros fragment"> Pero todos estos son casos de ciencia ficción y suponen una respuesta a la pregunta por si se trata de máquinas con inteligencia.</p>
+            </section>
+
+            <section>¿Qué podemos decir sobre la inteligencia de las máquinas por fuera de la ficción?
+
+                <p class="fragment">¿Pueden las máquinas <em> pensar</em>?</p>
+
+            </section>
+
+            <section data-background-image="img/kasparov.jpg" data-background-size="contain"></section>
+            <section data-background-image="img/watson.jpg" data-background-size="contain"></section>
+
+
+
+
+            <section data-background-color="white">
+
+                <iframe class=" stretch js-custom-lazy fluidvids-item js-custom-lazy-loaded is-playing" data-video="" data-id="5d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-fluidvids="loaded" src="https://player.vimeo.com/video/354980134?autopause=0&amp;autoplay=1&amp;background=1&amp;loop=1&amp;muted=1&amp;playsinline=1&amp;transparent=1" data-ready="true"></iframe>
+
+            </section>
+
+            <section data-background-color="white">
+                <iframe class="stretch js-custom-lazy fluidvids-item js-custom-lazy-loaded is-playing" data-video="" data-id="5c" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="0" data-fluidvids="loaded" src="https://player.vimeo.com/video/354980130?autopause=0&amp;autoplay=1&amp;background=1&amp;loop=1&amp;muted=1&amp;playsinline=1&amp;transparent=1" data-ready="true"></iframe></section>
+
+            <section>¿Son estas manifestaciones de inteligencia?</section>
+
+
+
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-5">
+                            <h3 style="text-align:left; background-color:white; color:#022461"> La IA que buscábamos</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>La pregunta filosófica por la inteligencia de las máquinas se remonta a los fundamentos mismos de la computación. </section>
+
+
+            <section data-background-image="img/turing.jpg" data-background-size="contain" data-background-position="right">
+
+                <div class="doscuadros">
+                    <p class="fragment ">Alan Turing ofreció las bases teóricas de lo que hoy son los computadores digitales. </p>
+                    <p class="fragment ">También se pregunto si sería posible que una máquina puede pensar. </p>
+
+                    <p class="fragment ">Todavía no tenemos una respuesta unívoca</p>
+
+                </div>
+
+
+
+            </section>
+
+            <section>La dificultad de la pregunta radica, en parte, en que no sabemos en qué consiste pensar en el caso de los humanos. Nuestro entendimiento de la mente humana todavía necesita mayor desarrollo.</section>
+
+
+            <section>La sugerencia de Turing fue cambiar la pregunta por la inteligencia y formuló lo que ahora se conoce como el Test de Turing.
+            </section>
+
+
+            <section>Hasta el momento no tenemos nada que propiamente haya pasado el Test de Turing. (Hay concursos anuales pero siempre con simplificaciones del test original.)
+            </section>
+
+
+            <section data-background-color="black" data-background-video="img/boston.mp4" data-background-position="right" data-background-video-muted>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class=" highlightred" style="text-align:left;">
+                                Pero eso no ha detenido a la ingienería. <br> No importa si en realidad hay inteligencia; importa si funciona.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-5">
+                            <h3 style="text-align:left; background-color:white; color:#022461"> La IA que tenemos y sus retos</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>A pesar de no tener una forma sistemática de determinar si una máquina es inteligente, tenemo ya una multiplicidad de agentes artificiales haciendo cosas sorprendentes. </section>
+            
+            
+               <section data-background-image="img/newrembrandt.jpg" data-background-size="contain" data-background-position="right"></section>
+             
+               <section data-background-color="white" data-background-image="img/guardian.jpg" data-background-size="contain" data-background-position="right">
+            
+            <aside>as</aside>
+            </section>
+            
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-5">
+                            <h3 style="text-align:left; background-color:white; color:#022461">Una forma de avanzar</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section data-background-color="white" data-background-image="img/collagesabana.jpg" data-background-size="contain" data-background-position="right">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-5">
+                            <p style="text-align:left; background-color:white; color:#022461">
+                                ¡Gracias!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            slideNumber: true,
+            fragmentInURL: false,
+            autoPlayMedia: true,
+            totalTime: 1500, // 1800=30 minutos de tiempo para la totalidad de la presentación
+            hash: true,
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },
+                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/highlight/highlight.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
