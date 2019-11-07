@@ -553,10 +553,8 @@ div.transbox ul {
     /* Some padding */
 }
 
-.encimoso {
-    position: absolute;
+.transparente {
     /* Position the background text */
-    bottom: 0;
     /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0);
     /* Fallback color */
