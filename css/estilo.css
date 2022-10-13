@@ -567,3 +567,35 @@ div.transbox ul {
     padding: 20px;
     /* Some padding */
 }
+/*para hacer las letras para el tablero/*/
+
+.greenscreen {
+    /*color:white;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    font-size: 40px; 
+    font-family:'Patrick Hand' !important; 
+    text-align: justify;
+}
+
+/*para hacer efct bold en texto P*/
+
+.reveal .slides section .fragment.subrayar {
+opacity: 1;
+visibility: inherit;
+}
+
+.reveal .slides section .fragment.subrayar.current-fragment{
+    border-radius: 5px;
+    color:  #000;
+  background: white;
+  /*padding: 5px;*/
+}
+
+.reveal .slides section .pregunta
+{
+    border-radius: 5px;
+    color:  #000;
+  background: white;
+  padding: 25px;
+    
+}
