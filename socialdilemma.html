@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>JCES - Unisabana</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+
+
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section data-background-image="img/ai.svg" data-background-size="contain" data-background="#f4f4f4">
+
+                <h3 style="background-color: rgba(0, 0, 0, 0.7)">¿El dilema de las redes sociales?</h3>
+                <font size="3">
+                    <p style="background-color: rgba(0, 0, 0, 0.7)">Juan Camilo Espejo-Serna<br> Universidad de la Sabana</p>
+                </font>
+            </section>
+
+             <section data-background-image="img/potro.jpeg" >
+
+            
+            
+            </section>
+
+            
+            <section>¿Se sienten rehenes de las redes sociales?
+            
+            
+            </section>
+
+            
+            
+            
+            <!--
+
+            <section>
+                <h1>Apéndices</h1>
+            </section>
+
+
+            <section data-background="indigo" id="Turing">
+
+                La idea es que en una máquina de Turing hay una cinta que hace las veces de la memoria de la máquina. La cinta está dividida en celdas discretas en donde hay un ‘1’ o un ‘0’ que es leído por la cabeza y con base en lo cual la unidad lógica puede seguir instrucciones definidas en términos de la siguiente manera.
+            </section>
+
+            <section data-background="indigo" id="Turing">
+
+                La idea es que en una máquina de Turing hay una cinta que hace las veces de la memoria de la máquina. La cinta está dividida en celdas discretas en donde hay un ‘1’ o un ‘0’ que es leído por la cabeza y con base en lo cual la unidad lógica puede seguir instrucciones definidas en términos de la siguiente manera.
+            </section>
+
+            <section data-background="indigo">
+
+                <ol>
+
+                    <li>reescribir la celda con un ‘1’, un ‘0’ o dejarla sin símbolo,</li>
+                    <li>mover la cabeza a la izquierda o derecha</li>
+                    <li>detener la máquina</li>
+                </ol>
+                <p class="fragment">Esto es todo lo que compone a este aparato hipotético por medio del cual se puede realizar cualquier algoritmo. Nada más. </p>
+
+            </section>
+
+            <section data-background="indigo">
+                Para ver más claramente cómo funciona, tomemos un set de instrucciones de una máquina que toma un número expresado en binario y le suma una unidad. (Otras máquinas para la misma función son posibles, esta es sólo una posible entre muchas.)
+            </section>
+
+            <section data-background="indigo">
+                <ol>
+
+                    <li class="">A. Si la cabeza lee 1, escribir 1 y mover a la derecha. Si la cabeza lee 0, escribir 0 y mover a la derecha. Si la cabeza intenta leer y no encuentra nada, entonces mover a la izquierda y realizar la instrucción B.
+                    </li>
+
+                    <li class="fragment">B. Si la cabeza lee 0, escribir 1 y detener la máquina. Si la cabeza lee 1, escribir 0, mover a la izquierda y realizar la instrucción B. Si la cabeza lee y no encuentra nada, escribir 1 y detener la máquina.
+                    </li>
+                </ol>
+
+
+            </section>
+
+            <section data-background="indigo">
+                Hagamos la suma "9+1"
+                <font size="6">
+
+                    <ol>
+                        <li class="fragment">
+                            9 se escribe '1001' en binario.
+                        </li>
+                        <li class="fragment">La cabeza comienza con la instrucción A: lee 1, escribe 1 y se mueve a la derecha.</li>
+                        <li class="fragment">La cabeza lee 0, escribe 0 y se mueve a la derecha.</li>
+                        <li class="fragment">La cabeza lee 0, escribe 0 y se mueve a la derecha.</li>
+                        <li class="fragment">La cabeza lee 1, escribe 1 y se mueve a la derecha.</li>
+                        <li class="fragment">La cabeza lee y no encuentra nada, no escribe nada, mueve a la izquierda y cambia a la instrucción B.</li>
+                        <li class="fragment">La cabeza lee 1, escribe 0 y se mueve a la izquierda.</li>
+                        <li class="fragment">La cabeza lee 0, escribe 1 y se detiene. </li>
+
+
+                    </ol>
+                </font>
+            </section>
+-->
+
+
+        </div>
+
+
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/simplemenu/simplemenu.js"></script>
+
+    <script>
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            totalTime: 2400, // 1800=30 minutos de tiempo para la totalidad de la presentación//2400=40min
+
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
